@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin, Globe, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
