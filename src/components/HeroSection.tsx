@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin, Clock } from "lucide-react";
-import storeExterior from "@/assets/store-exterior.png";
+import storeNight from "@/assets/store-night.png";
+import logo from "@/assets/logo-koptik.png";
 
 const HeroSection = () => {
   return (
@@ -8,8 +9,8 @@ const HeroSection = () => {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={storeExterior}
-          alt="K Optik & Audition - Devanture du magasin"
+          src={storeNight}
+          alt="K Optik & Audition - Vue extérieure de nuit"
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
@@ -29,14 +30,12 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-6">
-            <span className="text-foreground">K</span>
-            <span className="text-gradient-brand"> OPTIK</span>
-            <br />
-            <span className="text-foreground text-3xl md:text-4xl lg:text-5xl font-light tracking-wider">
-              & AUDITION
-            </span>
-          </h1>
+          {/* Logo */}
+          <img
+            src={logo}
+            alt="K Optik & Audition"
+            className="h-24 md:h-32 lg:h-40 w-auto mb-8"
+          />
 
           <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-10 font-body font-light leading-relaxed">
             Votre opticien de confiance au cœur du 15ème arrondissement de Paris.
