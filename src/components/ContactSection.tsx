@@ -48,18 +48,6 @@ const ContactSection = () => {
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center shrink-0">
-                <Globe className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground mb-1">Site web</h3>
-                <a href="https://koptik.fr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground font-body hover:text-primary transition-colors">
-                  koptik.fr
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center shrink-0">
                 <Clock className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
