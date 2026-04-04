@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import storeInterior from "@/assets/store-interior.png";
 import storeOffice from "@/assets/store-office.png";
 import storeExterior from "@/assets/store-exterior.png";
+import storeWide from "@/assets/store-wide.png";
 
 const images = [
+  { src: storeExterior, alt: "Devanture K Optik - Rue Balard" },
   { src: storeInterior, alt: "Intérieur du magasin - collection de montures" },
-  { src: storeOffice, alt: "Espace consultation" },
-  { src: storeExterior, alt: "Devanture K Optik" },
+  { src: storeWide, alt: "Vue panoramique du magasin" },
+  { src: storeOffice, alt: "Espace consultation et audioprothèse" },
 ];
 
 const GallerySection = () => {
@@ -25,7 +27,7 @@ const GallerySection = () => {
           <div className="h-1 w-16 bg-gradient-brand rounded-full mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {images.map((img, i) => (
             <motion.div
               key={i}
