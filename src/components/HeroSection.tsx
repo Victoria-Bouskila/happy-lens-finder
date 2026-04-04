@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin, Clock } from "lucide-react";
 import storeNight from "@/assets/store-night.png";
-import logo from "@/assets/logo-koptik.png";
 
 const HeroSection = () => {
   return (
@@ -30,12 +29,13 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Logo */}
-          <img
-            src={logo}
-            alt="K Optik & Audition"
-            className="h-24 md:h-32 lg:h-40 w-auto mb-8"
-          />
+          <h1 className="mb-8 flex items-baseline gap-3 md:gap-4">
+            <span className="font-heading font-black text-6xl md:text-8xl lg:text-9xl leading-none text-primary">K</span>
+            <div className="flex flex-col leading-none">
+              <span className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl tracking-wider text-foreground">OPTIK</span>
+              <span className="font-heading font-light text-lg md:text-2xl lg:text-3xl tracking-widest text-muted-foreground">& AUDITION</span>
+            </div>
+          </h1>
 
           <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-10 font-body font-light leading-relaxed">
             Votre opticien de confiance au cœur du 15ème arrondissement de Paris.
@@ -64,7 +64,7 @@ const HeroSection = () => {
           <div className="flex items-center gap-6 text-sm text-muted-foreground font-body">
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-primary" />
-              <span>Ouvert · Ferme à 19:00</span>
+              <span>Ouvert 10:00 · Ferme à 19:00</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-primary" />
