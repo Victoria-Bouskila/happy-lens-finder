@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin, Globe, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -42,18 +42,6 @@ const ContactSection = () => {
                 <h3 className="font-heading font-semibold text-foreground mb-1">Téléphone</h3>
                 <a href="tel:0144260624" className="text-muted-foreground font-body hover:text-primary transition-colors">
                   01 44 26 06 24
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center shrink-0">
-                <Globe className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground mb-1">Site web</h3>
-                <a href="https://koptik.fr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground font-body hover:text-primary transition-colors">
-                  koptik.fr
                 </a>
               </div>
             </div>
